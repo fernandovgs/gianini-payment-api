@@ -1,4 +1,4 @@
-package br.gianini.ecommerce.checkout;
+package br.gianini.ecommerce.payment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
