@@ -36,14 +36,14 @@ spring:
         checkout-created-input:
           destination: streaming.ecommerce.checkout.created
           contentType: application/*+avro
-          producer:
-            use-native-encoding: true
-        payment-paid-output:
-          destination: streaming.ecommerce.payment.paid
-          contentType: application/*+avro
           group: ${spring.application.name}
           consumer:
             use-native-decoding: true
+        payment-paid-output:
+          destination: streaming.ecommerce.payment.paid
+          contentType: application/*+avro
+          producer:
+            use-native-encoding: true
   kafka:
     properties:
       schema:
